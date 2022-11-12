@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      section,
+      article,
+      main,
+      nav {
+        margin: 20px;
+      }
+      header,
+      footer {
+        margin: 0;
+        padding: 10px;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+      }
+      header,
+      footer {
+        background-image: linear-gradient(to top, #460563 0%, #750082 100%);
+      }
+      button {
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        padding: 0.8em 1em calc(0.8em + 3px);
+        background: rgb(64, 199, 129);
+        box-shadow: 0 -3px rgb(53, 167, 110) inset;
+      }
+      button:hover {
+        background: rgb(53, 167, 110);
+      }
+      button:active {
+        background: rgb(33, 147, 90);
+        box-shadow: 0 3px rgb(33, 147, 90) inset;
+      }
+    </style>
+    <title>Test Hello!</title>
+  </head>
+  <body>
+    <header>Lida Man</header>
+    <main>
+      <h1>Проверь себя, Нео!</h1>
+    </main>
+    <section>
+      <article>
+        Давай познакомимся. Напиши свое имя:<br />
+        <input type="text" />
+      </article>
+      <article>
+        Меня зовут Лида! Слышала, ты неплохо считаешь. Давай, ты угадаешь мой
+        возраст. Я на 15 лет старше Wildberries<br />
+        18<input type="radio" name="age" value="age1" checked /><br />
+        33<input type="radio" name="age" value="option2" /><br />
+        24<input type="radio" name="age" value="option3" />
+      </article>
+      <article>
+        Расскажи, какого цвета твое настроение сегодня?<br />
+        <input type="color" />
+      </article>
+      <article>Выбери несколько изображений, и я расскажу о тебе</article>
+      <input
+        type="image"
+        src="https://picsum.photos/id/237/200/300"
+        alt="Dog"
+      /><input type="checkbox" value="option1" />
+      <input
+        type="image"
+        src="https://picsum.photos/seed/picsum/200/300"
+        alt="Winter"
+      /><input type="checkbox" value="option2" />
+      <input
+        type="image"
+        src="https://picsum.photos/id/13/200/300"
+        alt="Beach"
+      />
+      <input type="checkbox" value="option3" />
+      <input
+        type="image"
+        src="https://picsum.photos/id/63/200/300"
+        alt="Coffee"
+      /><input type="checkbox" value="option4" /><br />
+      <article>
+        А теперь ещё немного посчитаем <br /><br />
+        Сколько будет 5*8?<br />
+        <input type="text" id="q1" /><br /><br />
+        Сколько будет 35-7?<br />
+        <input type="text" id="q2" />
+      </article>
+      <button type="button" id="go">Сохранить и отправить ответы</button>
+      <article>
+        Рада знакомству с тобой! Если было интересно, оставь свой номер и / или
+        почту<br /><br />
+        <input type="tel" placeholder="988 33 11" /><br />
+        &nbsp<br />
+        <input type="email" placeholder="email@lm.com" />
+      </article>
+      <article>
+        Или напиши / позвони мне сам<br />
+        <a href="tel:+7 985 089 46 41">+7 985 089 46 41</a><br />
+        <a href="mailto:manatkina.ls@gmail.com">My e-mail</a>
+      </article>
+      <hr />
+    </section>
+    <footer>© 2022 Made just for Wildberries</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
